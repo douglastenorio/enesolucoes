@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231005 10:47:31.626" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon Testes" source="C:\Users\Lenovo\Documents\5-Automation\enesolucoes\5-automation\amazon_testes.robot">
+<test id="s1-t1" name="Caso de teste 04 - Editar quantidade dos produtos selecionados após adicionar ao carrinho" line="43">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231005 10:47:31.876" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231005 10:47:31.876" endtime="20231005 10:47:33.813"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231005 10:47:33.813" endtime="20231005 10:47:33.999"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:31.876" endtime="20231005 10:47:33.999"/>
+</kw>
+<kw name="Dado que o usuário realiza a pesquisa pelo site &quot;www.amazon.com.br&quot; utilizando o chrome" library="amazon_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231005 10:47:34.000" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20231005 10:47:34.000" endtime="20231005 10:47:38.714"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='nav-logo-link nav-progressive-attribute']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231005 10:47:38.714" endtime="20231005 10:47:39.046"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231005 10:47:39.369" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231005 10:47:39.046" endtime="20231005 10:47:39.369"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>evidencias/ct-04</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<msg timestamp="20231005 10:47:39.369" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<status status="PASS" starttime="20231005 10:47:39.369" endtime="20231005 10:47:39.372"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:33.999" endtime="20231005 10:47:39.372"/>
+</kw>
+<kw name="E pesquisa por bola de futebol penalty no campo de busca na região superior do site" library="amazon_resources">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[contains(@type,'text')]</arg>
+<arg>bola de futebol penalty</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231005 10:47:39.373" level="INFO">Typing text 'bola de futebol penalty' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20231005 10:47:39.372" endtime="20231005 10:47:39.726"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[contains(@type,'submit')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231005 10:47:39.727" level="INFO">Clicking element '//input[contains(@type,'submit')]'.</msg>
+<status status="PASS" starttime="20231005 10:47:39.726" endtime="20231005 10:47:41.979"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//img[@data-image-index='1']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231005 10:47:41.979" endtime="20231005 10:47:42.056"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231005 10:47:42.255" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/ct-04/selenium-screenshot-1.png"&gt;&lt;img src="evidencias/ct-04/selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231005 10:47:42.056" endtime="20231005 10:47:42.255"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>evidencias/ct-04</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<msg timestamp="20231005 10:47:42.256" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<status status="PASS" starttime="20231005 10:47:42.256" endtime="20231005 10:47:42.258"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:39.372" endtime="20231005 10:47:42.259"/>
+</kw>
+<kw name="E clica no resultado do item da pesquisa" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//img[@data-image-index='1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231005 10:47:42.260" level="INFO">Clicking element '//img[@data-image-index='1']'.</msg>
+<status status="PASS" starttime="20231005 10:47:42.260" endtime="20231005 10:47:45.929"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Adicionar ao carrinho</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20231005 10:47:45.929" endtime="20231005 10:47:45.998"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231005 10:47:46.467" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/ct-04/selenium-screenshot-2.png"&gt;&lt;img src="evidencias/ct-04/selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231005 10:47:45.998" endtime="20231005 10:47:46.467"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>evidencias/ct-04</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<msg timestamp="20231005 10:47:46.467" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<status status="PASS" starttime="20231005 10:47:46.467" endtime="20231005 10:47:46.470"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:42.259" endtime="20231005 10:47:46.470"/>
+</kw>
+<kw name="E clica no botão &quot;Adicionar ao carrinho&quot;" library="amazon_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[contains(@title,'Adicionar ao carrinho')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231005 10:47:46.471" endtime="20231005 10:47:46.619"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[contains(@title,'Adicionar ao carrinho')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231005 10:47:46.620" level="INFO">Clicking element '//input[contains(@title,'Adicionar ao carrinho')]'.</msg>
+<status status="PASS" starttime="20231005 10:47:46.619" endtime="20231005 10:47:48.461"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231005 10:47:48.693" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/ct-04/selenium-screenshot-3.png"&gt;&lt;img src="evidencias/ct-04/selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231005 10:47:48.462" endtime="20231005 10:47:48.693"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>evidencias/ct-04</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<msg timestamp="20231005 10:47:48.693" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<status status="PASS" starttime="20231005 10:47:48.693" endtime="20231005 10:47:48.695"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:46.471" endtime="20231005 10:47:48.695"/>
+</kw>
+<kw name="E edita a quantidade de 3 unidades" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(@aria-label,'1 item no carrinho')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231005 10:47:48.697" level="INFO">Clicking element '//a[contains(@aria-label,'1 item no carrinho')]'.</msg>
+<status status="PASS" starttime="20231005 10:47:48.696" endtime="20231005 10:47:49.834"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>quantity</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20231005 10:47:49.835" level="INFO">Selecting options from selection list 'quantity' by value 3.</msg>
+<status status="PASS" starttime="20231005 10:47:49.834" endtime="20231005 10:47:49.995"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231005 10:47:50.162" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/ct-04/selenium-screenshot-4.png"&gt;&lt;img src="evidencias/ct-04/selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231005 10:47:49.995" endtime="20231005 10:47:50.163"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>evidencias/ct-04</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<msg timestamp="20231005 10:47:50.163" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<status status="PASS" starttime="20231005 10:47:50.163" endtime="20231005 10:47:50.166"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:48.696" endtime="20231005 10:47:50.166"/>
+</kw>
+<kw name="Então a quantidade deve ser igual a 3 itens" library="amazon_resources">
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>quantity</arg>
+<arg>value</arg>
+<arg>3</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20231005 10:47:50.212" level="INFO">Element 'quantity' attribute 'value' contains value '3'.</msg>
+<status status="PASS" starttime="20231005 10:47:50.167" endtime="20231005 10:47:50.212"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231005 10:47:50.361" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencias/ct-04/selenium-screenshot-5.png"&gt;&lt;img src="evidencias/ct-04/selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231005 10:47:50.213" endtime="20231005 10:47:50.361"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>evidencias/ct-04</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<msg timestamp="20231005 10:47:50.361" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<status status="PASS" starttime="20231005 10:47:50.361" endtime="20231005 10:47:50.363"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:50.166" endtime="20231005 10:47:50.363"/>
+</kw>
+<kw name="Fechar navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231005 10:47:50.363" endtime="20231005 10:47:52.872"/>
+</kw>
+<status status="PASS" starttime="20231005 10:47:50.363" endtime="20231005 10:47:52.872"/>
+</kw>
+<doc>Este teste valida a edição de quantidade dos produtos selecionados ao carrinho de compras</doc>
+<tag>carrinho_de_compras</tag>
+<status status="PASS" starttime="20231005 10:47:31.875" endtime="20231005 10:47:52.875"/>
+</test>
+<doc>Esta suíte testa a interação do usuário com o carrinho de compras da amazon.com.br</doc>
+<status status="PASS" starttime="20231005 10:47:31.627" endtime="20231005 10:47:52.883"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">carrinho_de_compras</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231005 10:47:39.369" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<msg timestamp="20231005 10:47:42.256" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<msg timestamp="20231005 10:47:46.467" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<msg timestamp="20231005 10:47:48.693" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<msg timestamp="20231005 10:47:50.163" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+<msg timestamp="20231005 10:47:50.361" level="WARN">Keyword 'Set Screenshot Directory' found both from a custom library 'SeleniumLibrary' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Set Screenshot Directory' or 'Screenshot.Set Screenshot Directory'.</msg>
+</errors>
+</robot>
